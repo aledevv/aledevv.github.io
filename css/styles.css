@@ -1619,5 +1619,7 @@ a.subtle:hover {
     transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
 }
 
-
+.navbar {
+	display: none;
+}
 
