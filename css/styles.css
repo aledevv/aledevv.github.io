@@ -1598,3 +1598,26 @@ a.subtle:hover {
     }
 }
 
+.navbar {
+    font-size: 1.125rem; /* oppure 1rem per meno drastico */
+}
+
+.navbar .fa-stack {
+    font-size: 1.25rem; /* oppure 1.5rem se le vuoi ben visibili */
+}
+
+.navbar .logo-image img {
+    height: 50px; /* aumentato da 36px */
+}
+
+.navbar.top-nav-collapse {
+    background-color: rgba(36, 60, 100, 0.8); /* grigio-blu profondo */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+
+
