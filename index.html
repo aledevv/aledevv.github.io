@@ -1,442 +1,475 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Portfolio di Alessandro De Vidi - Sviluppatore software, Intelligenza Artificiale, Computer Vision, DevOps.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alessandro De Vidi - AI Engineer, Computer Vision, Machine Learning">
     <meta name="author" content="Alessandro De Vidi">
-    <meta name="keywords" content="Alessandro De Vidi, AI developer, portfolio, computer vision, software engineer, machine learning, Trento, developer">
-
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
-	<meta property="og:site_name" content="" /> <!-- website name -->
-	<meta property="og:site" content="" /> <!-- website link -->
-	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
-
-    <!-- Webpage Title -->
+    <meta name="keywords" content="Alessandro De Vidi, AI, Machine Learning, Computer Vision, Portfolio">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Alessandro De Vidi - AI Engineer">
+    <meta property="og:description" content="Master's student in AI Systems, passionate about Computer Vision and Machine Learning">
+    <meta property="og:type" content="website">
+    
     <title>Alessandro De Vidi</title>
     
-    <!-- Styles -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-	
-	<!-- Favicon  -->
+    <!-- Favicon -->
     <link rel="icon" href="images/aledev-logo.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
-<body data-spy="scroll" data-target=".fixed-top">
-    
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+<body>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
         <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm Alessandro De Vidi <span class="flip-logo">🚀</span>
+                </h1>
+                <p class="hero-subtitle">AI Engineer · Computer Vision · Problem Solver</p>
+                <div class="hero-cta">
+                    <a href="files/cv_en.pdf" class="btn btn-primary" download>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Download CV
+                    </a>
+                    <a href="#projects" class="btn btn-secondary smooth-scroll">View Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    Master's student in <strong>Artificial Intelligence Systems</strong> with a solid background in computer engineering and software development. Passionate about <strong>AI, Computer Vision, and Software Development</strong>. Fast learner, adaptable, and team-oriented with strong communication and problem-solving skills.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section id="experiences" class="section section-gray">
+        <div class="container">
+            <h2 class="section-title">Experiences</h2>
             
-            <!-- Logo quadrato -->
-            <a class="navbar-brand logo-image" href="index.html">
-                <img src="images/aledev-logo.png" alt="AleDev Logo">
-            </a>
-
-            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#header">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#contact-me">Contact</a>
-                    </li>
-                </ul>
-
-                <!-- Social icons -->
-                <span class="nav-item social-icons">
-                    <span class="fa-stack">
-                        <a href="https://www.linkedin.com/in/alessandro-de-vidi/" target="_blank">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="https://github.com/aledevv" target="_blank">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-github fa-stack-1x"></i>
-                        </a>
-                    </span>
-                </span>
-            </div> <!-- end of navbar-collapse -->
-        </div> <!-- end of container -->
-    </nav>
-    <!-- end of navigation -->
-
-
-
-    <!-- Header -->
-    <header id="header" class="header text-white text-center d-flex align-items-center">
-        <div class="container">
-            <div class="row justify-content-start">
-                <div class="col-lg-8 col-md-6 col-sm-10">
-                    <div class="text-container">
-                        <!-- Nome con animazione -->
-                        <h1 class="h1-large animate-fade-in-up">Alessandro De Vidi</h1>
-
-                        <!-- Sottotitolo con delay -->
-                        <p class="subtitle animate-fade-in-up delay-1s">
-                            Master's student in AI Systems · Computer Engineer · Problem Solver
-                        </p>
-
-                        <!-- Pulsanti -->
-                        <a class="btn-solid-lg page-scroll" href="#about">
-                            Discover <i class="fas fa-arrow-down scroll-icon"></i>
-                        </a>
-
-                        <a class="btn-outline-lg page-scroll" href="#contact-me">
-                            <i class="fas fa-user"></i> Contact Me
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- end of header -->
-
-
-    <!-- About-->
-    <div id="about" class="basic-1 bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="text-container first">
-                        <h2>Hi, I'm a Master's student in AI Systems</h2>
-                        <p>
-                            Master's student in Artificial Intelligence Systems with a solid background in <b>computer engineering</b> and <b>software development</b>. Passionate about <b>AI, Computer Vision, and Software development</b>. Fast learner, adaptable, and team-oriented. Strong communication and problem-solving skills, with an interest in combining academic rigor and practical applications.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="text-container second">
-                        <h6>Research Interests & Knowledge Areas</h6>
-                            <ul class="skills-list">
-                                <li><i class="fas fa-brain"></i> Machine and Deep Learning</li>
-                                <li><i class="fas fa-eye"></i> Computer Vision</li>
-                                <li><i class="fas fa-tools"></i> Software Engineering & DevOps</li>
-                            </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="text-container third">
-                        <h6>Languages 🌍</h6>
-                        <ul class="skills-list">
-                            <li>🇮🇹 Italian: Native</li>
-                            <li>🇬🇧 English: B2 (Upper Intermediate)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end of about -->
-
-
-    <!-- Education -->
-    <div id="education" class="basic-2 bg-gray">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-lg-12 text-center">
-                    <h2 class="h2-heading">Education</h2>
-                </div>
-            </div>
-
             <div class="timeline">
-
-                <!-- Master -->
+                <!-- Experience 1: AI Challenge -->
                 <div class="timeline-item">
-                    <div class="timeline-icon">
-                        🎓
-                    </div>
+                    <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <img src="images/unitn-logo.png" alt="University of Trento Logo" style="height: 30px; margin-bottom: 10px;">
-                        <h5>Master’s Degree in Artificial Intelligence Systems</h5>
-                        <p><strong>University of Trento & Czech Technical University</strong><br>2023 – present</p>
-                        <p>🚧 🏗️ <em>In progress</em></p> <!-- METTERE TESI QUI-->
-                    </div>
-                </div>
-
-                <!-- Bachelor -->
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        🎓
-                    </div>
-                    <div class="timeline-content">
-                        <img src="images/unitn-logo.png" alt="University of Trento Logo" style="height: 30px; margin-bottom: 10px;">
-                        <h5>Bachelor’s Degree in Computer Engineering</h5>
-                        <p><strong>University of Trento, Italy</strong><br>2020 – 2023</p>
-                        <p><strong>Final grade:</strong> 108/110</p>
-                        <p><strong>Thesis:</strong> <em>Mitigating New Bias in Text-to-Image Models - New Strategies with ITI-GEN and Large Language Models</em></p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-
-    
-
-    <!-- Details -->
-	<div class="area-2 bg-gray">
-            <div class="container">    
-                <div class="row mb-5">  
-                    <div class="col-lg-12">     
-                        
-                        <!-- Text Container -->
-                        <div class="text-container skills-section mt-5">
-                            <h2 class="h2-heading mb-5">Technical Skills</h2>
-
-                            <div class="row">
-                                <div class="col-lg-3 col-md-6 mb-4">
-                                    <h6><strong>Languages</strong></h6>
-                                    <ul class="skills-list">
-                                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/> Python</li>
-                                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"/> Java</li>
-                                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"/> C/C++</li>
-                                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS"/> JavaScript</li>
-                                        <li><i class="fas fa-database"></i> SQL</li>
-                                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart"/> Dart</li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-3 col-md-6 mb-4">
-                                    <h6><strong>Frameworks</strong></h6>
-                                    <ul class="skills-list">
-                                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node"/> Node.js</li>
-                                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask"/> Flask</li>
-                                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow"/> TensorFlow</li>
-                                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV"/> OpenCV</li>
-                                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter"/> Flutter</li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-3 col-md-6 mb-4">
-                                    <h6><strong>Systems & Tools</strong></h6>
-                                    <ul class="skills-list">
-                                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"/> Linux</li>
-                                        <li><i class="fas fa-desktop"></i> Operating Systems</li>
-                                        <li><i class="fas fa-microchip"></i> Embedded Systems</li>
-                                        <li><i class="fas fa-globe"></i> IoT</li>
-                                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"/> Git</li>
-                                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"/> Docker</li>
-                                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"/> PostgreSQL</li>
-                                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VSCode"/> VSCode</li>
-                                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" alt="PyCharm"/> PyCharm</li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-3 col-md-6 mb-4">
-                                    <h6><strong>AI & Other</strong></h6>
-                                    <ul class="skills-list">
-                                        <li><i class="fas fa-robot"></i> Machine Learning</li>
-                                        <li><i class="fas fa-eye"></i> Computer Vision</li>
-                                        <li><img src="https://cdn.prod.website-files.com/646dd1f1a3703e451ba81ecc/64994922cf2a6385a4bf4489_UltralyticsYOLO_mark_blue.svg" height="20"/> YOLOv8</li>
-                                        <li><i class="fas fa-brain"></i> CNNs</li>
-                                        <li><i class="fas fa-balance-scale"></i> Bias Mitigation</li>
-                                        <li><i class="fas fa-tools"></i> Software Engineering</li>
-                                        <li><i class="fas fa-shield-alt"></i> Cybersecurity Fundamentals</li>
-                                        <li><i class="fas fa-rocket"></i> Agile</li>
-                                        <li><i class="fas fa-project-diagram"></i> UML</li>
-                                        <li><i class="fas fa-link"></i> REST APIs</li>
-                                    </ul>
-                                </div>
+                        <div class="education-header">
+                            <img src="images/hit-logo.png" alt="Hub Innovazione Trentino" class="education-logo">
+                            <div>
+                                <h3 class="education-title">AI Challenge Participant</h3>
+                                <p class="education-institution"><a href="https://www.trentinoinnovation.eu/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Hub Innovazione Trentino</a>, Trento, Italy</p>
+                                <p class="education-period">September 2025 – December 2025</p>
                             </div>
-
-                            <h2 class="h2-heading mt-5 mb-4">Soft Skills</h2>
-                            <div class="row">
-                                <div class="col-md-6 mb-4">
-                                    <ul class="skills-list">
-                                        <li><i class="fas fa-comments"></i> Strong communication</li>
-                                        <li><i class="fas fa-bolt"></i> Fast learner & adaptable</li>
-                                        <li><i class="fas fa-bullseye"></i> Combining academic rigor and practical applications</li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6 mb-4">
-                                    <ul class="skills-list">
-                                        <li><i class="fas fa-puzzle-piece"></i> Problem-solving</li>
-                                        <li><i class="fas fa-users"></i> Team-oriented</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-
                         </div>
+                        <p class="education-detail" style="margin-top: 1rem;">
+                            <strong>Team Trentingrana 🧀</strong><br>
+                            Competed in the Industrial AI Challenge to design sustainable industrial energy solutions. Developed predictive ML models on multi-source energy data to forecast demand and carbon footprint. Engineered AI simulations integrating biogas and solar systems for sustainable energy management. Applied deep reinforcement learning alongside genetic algorithms to cut production-related emissions.
+                        </p>
+                    </div>
+                </div>
 
+                <!-- Experience 2: AI Research Intern -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="education-header">
+                            <img src="images/unitn-logo.png" alt="University of Trento" class="education-logo">
+                            <div>
+                                <h3 class="education-title">AI Research Intern</h3>
+                                <p class="education-institution"><a href="https://www.unitn.it" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">University of Trento</a>, Italy</p>
+                                <p class="education-period">February 2024 – September 2024</p>
+                            </div>
+                        </div>
+                        <p class="education-detail" style="margin-top: 1rem;">
+                            Focused on bias mitigation in text-to-image models using ITI-GEN and Large Language Models. Explored fairness and ethical AI approaches in generative models.
+                        </p>
+                    </div>
+                </div>
 
-                        <!-- end of text container -->
+                <!-- Experience 3: EterLife -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="education-header">
+                            <img src="images/eterlife-logo.png" alt="EterLife" class="education-logo">
+                            <div>
+                                <h3 class="education-title">Co-Founder & Full-Stack Developer</h3>
+                                <p class="education-institution"><a href="https://eterlife.it" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Eterlife S.r.l</a>, Treviso, Italy</p>
+                                <p class="education-period">April 2023 – Present</p>
+                            </div>
+                        </div>
+                        <p class="education-detail" style="margin-top: 1rem;">
+                            Co-founded and developed a comprehensive digital legacy platform. Leading full-stack development using Flutter and Firebase, implementing secure data management, post-mortem access protocols, and succession planning tools.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    </div> <!-- end of col -->
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
-		</div> <!-- end of area-2 -->
-    </div> <!-- end of split -->
-    <!-- end of details -->
-
-
-    <!-- Projects -->
-    <div id="projects" class="basic-3">
+    <!-- Projects Section -->
+    <section id="projects" class="section section-gray">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">Projects</h2>
-                    <p class="p-heading">A selection of my most relevant academic and technical projects.</p>
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">A selection of my most relevant academic and technical projects</p>
+            
+            <div class="projects-grid">
+                <!-- Project 1: EterLife -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">EterLife - Digital Legacy Platform 🚀</h3>
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Mobile App</span>
+                            <span class="tag">Coming Soon</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Mobile app for digital asset management and inheritance planning. Built with Flutter and Firebase, featuring secure data management, post-mortem access protocols, and comprehensive succession planning tools. Simplifying estate management for the digital age.
+                    </p>
+                    <div class="project-footer">
+                        <div class="project-meta">
+                            <span class="project-year">2026</span>
+                            <span class="project-award">🚀 Coming Soon</span>
+                        </div>
+                        <a href="https://eterlife.it" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            Visit Site
+                        </a>
+                    </div>
                 </div>
+
+                <!-- Project 2: CLIP Enhancement -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Zero-Shot CLIP Enhancement with LLM Prompts</h3>
+                        <div class="project-tags">
+                            <span class="tag">CLIP</span>
+                            <span class="tag">LLM</span>
+                            <span class="tag">Zero-Shot</span>
+                            <span class="tag">PyTorch</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Zero-shot approach to improve Vision-Language Model performance on Oxford Flowers102 dataset using LLM-generated prompts crafted from runtime knowledge base. Leveraged web search for visually rich textual information and image augmentations via Zero-1-to-3 diffusion model for enhanced similarity estimation.
+                    </p>
+                    <div class="project-images">
+                        <img src="images/adg-clip.jpeg" alt="CLIP Architecture" class="project-image">
+                        <img src="images/adg-clip-sample.png" alt="CLIP Sample 1" class="project-image">
+                        <img src="images/adg-clip-sample2.png" alt="CLIP Sample 2" class="project-image">
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-year">July 2025</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: AskFix -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">🏠 AskFix: Intelligent Home Repair Assistant</h3>
+                        <div class="project-tags">
+                            <span class="tag">Multi-Agent AI</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">A2A Protocol</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Distributed multi-agent AI system revolutionizing home repair assistance through intelligent problem diagnosis (87.5% accuracy), professional matching with Trust-Based algorithm, and automated service coordination. Built on microservices architecture with Agent-to-Agent communication protocols.
+                    </p>
+                    <div class="project-footer">
+                        <div class="project-meta">
+                            <span class="project-year">June 2025</span>
+                        </div>
+                        <a href="https://github.com/marcopros/dlsais-project" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4: 3D Pose Estimation -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">3D Pose Estimation & MoCap Validation</h3>
+                        <div class="project-tags">
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">OpenCV</span>
+                            <span class="tag">3D Reconstruction</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Complete CV pipeline for 3D human pose estimation using multiview cameras. Triangulated 2D keypoints to recover basketball poses in 3D with 18mm MPJPE accuracy against motion capture ground truth. Calibrated 8-camera rig with automated lens-distortion correction.
+                    </p>
+                    <div class="project-footer">
+                        <div class="project-meta">
+                            <span class="project-year">June 2025</span>
+                        </div>
+                        <a href="https://github.com/carlozamu/3d-pose-estimation-mocap-align" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 5: Robotic Tap System -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Robotic Tap System 🍺🤖</h3>
+                        <div class="project-tags">
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Neural Networks</span>
+                            <span class="tag">KUKA</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Co-developed the vision system of a robotic beer dispensing system for RICAP @ CIIRC Prague / Expo 2025. Integrated KUKA arms, neural networks, and real-time sensor feedback with focus on optimization and precision.
+                    </p>
+                    <div class="project-meta">
+                        <span class="project-year">November 2024</span>
+                    </div>
+                </div>
+
+                <!-- Project 6: Pediline -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Pediline 🏙️🌐</h3>
+                        <div class="project-tags">
+                            <span class="tag">Full-Stack</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Web App</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Finalist (3rd place) in "100 Software Projects for the City" challenge. Developed a full-stack web service to improve public utility access and citizen interaction with Municipality of Trento.
+                    </p>
+                    <div class="project-footer">
+                        <div class="project-meta">
+                            <span class="project-year">June 2024</span>
+                            <span class="project-award">🏆 3rd Place</span>
+                        </div>
+                        <a href="https://github.com/aledevv/pediline" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 7: Bias Mitigation -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Bias Mitigation in Text-to-Image Models</h3>
+                        <div class="project-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">LLMs</span>
+                            <span class="tag">Research</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Bachelor's thesis: developed new strategies with ITI-GEN and Large Language Models to mitigate bias in text-to-image generation models. Explored fairness and ethical AI approaches.
+                    </p>
+                    <div class="project-footer">
+                        <div class="project-meta">
+                            <span class="project-year">September 2024</span>
+                            <span class="project-type">📄 Thesis</span>
+                        </div>
+                        <a href="https://github.com/humansensinglab/ITI-GEN" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            ITI-GEN
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 8: SmartChess -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">SmartChess ♟️🧠</h3>
+                        <div class="project-tags">
+                            <span class="tag">YOLOv8</span>
+                            <span class="tag">Raspberry Pi</span>
+                            <span class="tag">IoT</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Built a chess-playing IoT system with Raspberry Pi 4 and YOLOv8 for real-time board recognition. Integrated adjustable AI difficulty for training via custom chess engine.
+                    </p>
+                    <div class="project-footer">
+                        <div class="project-meta">
+                            <span class="project-year">February 2024</span>
+                        </div>
+                        <a href="https://github.com/aledevv/smartchess" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-container">
-                        <h5>
-                            Robotic Tap System (Technical Contributor, 2024–2025) 🍺 🤖
-                        </h5>
-                        <p>
-                            RICAP @ CIIRC (Czech Institute) Prague / Expo 2025<br>
-                            Co-developed the vision system of a robotic beer dispensing system integrating KUKA arms, neural networks, and real-time sensor feedback. Focused on optimization, precision, and adaptive performance under real-world Expo constraints.
-                        </p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">AI & Machine Learning</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">YOLOv8</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">OpenCV</span>
                     </div>
+                </div>
 
-
-                    <div class="text-container">
-                        <h5>
-                            <a href="https://github.com/aledevv/smartchess" class="project-link" target="_blank">
-                                SmartChess – Embedded AI Chess Trainer (2023) ♟️ 🧠
-                            </a>
-                        </h5>
-                        <p>
-                            University of Trento, Italy<br>
-                            Built a chess-playing IoT system with a Raspberry Pi 4 and YOLOv8 for real-time board recognition. Integrated adjustable AI difficulty for training via custom chess engine.
-                        </p>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Development</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Dart</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">SQL</span>
                     </div>
+                </div>
 
-                    <div class="text-container">
-                        <h5>
-                            <a href="https://github.com/aledevv/pediline" class="project-link" target="_blank">
-                                Pediline – Smart City Web App (2023) 🏙️ 🌐
-                            </a>
-                        </h5>
-                        <p>
-                            DISI UniTn + Municipality of Trento, Italy<br>
-                            Finalist (3rd place) in the "100 Software Projects for the City" student challenge. Developed a full-stack web service to improve public utility access and citizen interaction.
-                        </p>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Mobile Development</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Firestore</span>
+                        <span class="skill-tag">Cloud Functions</span>
+                        <span class="skill-tag">iOS/Android</span>
+                        <span class="skill-tag">Cross-platform</span>
                     </div>
+                </div>
 
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Cloud & Tools</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Google Cloud</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Linux</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- end of projects -->
+    </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="section section-gray">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="education-header">
+                            <img src="images/unitn-logo.png" alt="University of Trento" class="education-logo">
+                            <div>
+                                <h3 class="education-title">Master's Degree in Artificial Intelligence Systems</h3>
+                                <p class="education-institution">University of Trento</p>
+                                <p class="education-period">September 2024 – Present</p>
+                            </div>
+                        </div>
+                        <p class="education-status">🚧 In progress</p>
+                    </div>
+                </div>
 
-
-
-
-    
-
-
-    <!-- Section Divider -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <hr class="section-divider">
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of container -->
-    <!-- end of section divider -->
-
-
-    <!-- Contact Card Above Footer -->
-    <div id="contact-me" class="contact-card bg-white py-5">
-        <div class="container text-center">
-            <!-- Profilo circolare -->
-            <img src="images/me.jpg" alt="Alessandro De Vidi" class="profile-pic mb-3">
-
-            <!-- Nome -->
-            <h4 class="mb-3">Alessandro De Vidi</h4>
-
-            <!-- Bottoni -->
-            <a href="files/cv_en.pdf" class="btn btn-outline-lg mr-2 mb-2" download>
-                <i class="fas fa-file-download"></i> Download CV
-            </a>
-            <a href="mailto:aledevidy@gmail.com" class="btn btn-solid-lg mb-2">
-                <i class="fas fa-envelope"></i> Contact Me
-            </a>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="education-header">
+                            <img src="images/unitn-logo.png" alt="University of Trento" class="education-logo">
+                            <div>
+                                <h3 class="education-title">Bachelor's Degree in Computer Engineering</h3>
+                                <p class="education-institution">University of Trento, Italy</p>
+                                <p class="education-period">September 2021 – September 2024</p>
+                            </div>
+                        </div>
+                        <p class="education-detail"><strong>Final grade:</strong> 108/110</p>
+                        <p class="education-detail"><strong>Thesis:</strong> Mitigating New Bias in Text-to-Image Models</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
     <!-- Footer -->
-    <div class="footer bg-gray">
+    <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="social-container">
-                        <span class="fa-stack">
-                            <a href="https://www.linkedin.com/in/alessandro-de-vidi/" target="_blank">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="https://github.com/aledevv" target="_blank">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-github fa-stack-1x"></i>
-                            </a>
-                        </span>
-                    </div> <!-- end of social-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of footer -->  
-    <!-- end of footer -->
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="footer-text">© 2025 Alessandro De Vidi. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/aledevv" class="footer-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alessandro-de-vidi/" class="footer-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:aledevidy@gmail.com" class="footer-link" aria-label="Email">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-
-    <!-- Copyright -->
-    <div class="copyright bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Copyright © <a class="no-line" href="#">Alessandro De Vidi</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Distributed By <a class="no-line" href="https://themewagon.com/">Themewagon</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-        
-    </div> <!-- end of copyright --> 
-    <!-- end of copyright -->
-    
-    	
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
 </body>
 </html>
